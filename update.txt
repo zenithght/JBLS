@@ -1,0 +1,26 @@
+v1.1更新说明：
+1.添加-p参数，用于指定监听的端口
+2.添加-u参数，用于指定用户名
+3.添加-prolongationPeriod参数，具体干嘛的我也不知道
+
+v1.2更新说明：
+1.修改-u参数，当未设置-u参数，且计算机用户名为^[a-zA-Z0-9]+$时，使用计算机用户名作为idea用户名。
+2.修改当用户使用浏览器直接打开授权服务器时，若在程序工作目录中存在IntelliJIDEALicenseServer.html文件，则返回IntelliJIDEALicenseServer.html中的内容到用户浏览器。
+
+v1.3更新说明：
+添加-l参数，用于指定绑定监听到哪个IP
+
+v1.4更新说明：
+1.修复 ReSharper 无法激活的问题
+2.添加 010Editor 网络验证功能
+
+v1.5更新说明：
+1.升级到 Golang 1.9
+2.解决 mac os 10.13 无法使用的问题
+
+010Editor 网络验证使用说明:
+1.下载并安装 http://www.sweetscape.com/download/010EditorWin64Installer.exe
+2.下载keygen计算注册码 https://mega.nz/#!yh51ECCD!Bs3BaAQnb90gzXJvaY3hZ5jm5hpiLCmcmKL_rThM4q8
+3.将 127.0.0.1 www.sweetscape.com 添加到hosts.
+4.启动IntelliJIDEALicenseServer, 并将监听端口修改为80.
+5.激活010Editor.
