@@ -9,7 +9,7 @@
 3. 添加
 
         cd /data/JB
-        ./IntelliJIDEALicenseServer_linux_amd64 -p 2703
+        ./IntelliJIDEALicenseServer_linux_amd64 -p 2703 &
 
 4. 配置Nginx反向代理
 
