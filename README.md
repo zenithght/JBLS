@@ -9,7 +9,7 @@
 3. 添加
 
         cd /data/JB
-        ./IntelliJIDEALicenseServer_linux_amd64 -p 2703 &
+        nohup ./IntelliJIDEALicenseServer_linux_amd64 -p 2703 -prolongationPeriod 999999999999 > log.out 2>&1 &
 
 4. 配置Nginx反向代理
 
