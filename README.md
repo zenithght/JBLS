@@ -15,15 +15,8 @@
 
         server {
             listen       80;
-            listen      443;
             server_name  jb.bafflingbug.cn;
-            ssl on;
-            ssl_certificate 1_jb.bafflingbug.cn_bundle.crt;
-            ssl_certificate_key 2_jb.bafflingbug.cn.key;
-            ssl_session_timeout 5m;
-            ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-            ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
-            ssl_prefer_server_ciphers on;
+            
             location / {
                 proxy_redirect off;
                 proxy_set_header Host $host;
@@ -36,7 +29,6 @@
                 root  /data/JB/;
                 expires      7d; 
             } 
-            error_page 497  https://$host$uri$args;
         }
 
 5. 重启Nginx
