@@ -23,7 +23,7 @@
                 proxy_set_header X-Real-IP $remote_addr;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                 proxy_pass http://127.0.0.1:2703;
-                proxy_redirect http://127.0.0.1:2703 https://jb.bafflingbug.cn;
+                proxy_redirect http://127.0.0.1:2703 http://jb.bafflingbug.cn;
             }
             location /static/  { 
                 root  /data/JB/;
